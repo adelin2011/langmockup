@@ -1,0 +1,319 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.site-container {
+    max-width: 1200px;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "PT Serif", serif;
+    font-size: 18px;
+    color: #5b5b5b;
+}
+
+@font-face {
+    font-family: "centurygothic";
+    src: url("../fonts/centurygothic.ttf") format("truetype");
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "centurygothic", sans-serif;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2.8em;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+p,
+ul,
+ol {
+    margin-top: 0;
+    line-height: 180%;
+}
+
+a {
+    color: #0000ff;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #45698e;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.group::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+#wrapper {
+    background: white; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(white, #a09691); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(white, #a09691); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(white, #a09691); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(white, #a09691); /* Standard syntax */
+    padding: 0 10px 0 10px;
+    margin: 0 auto;
+}
+
+/* Header */
+
+#header {
+    margin: 0 auto;
+}
+
+/* Logo */
+
+.gradient {
+    background: #a09691; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #a09691, #d2c0aa, #d7cbc6); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #a09691, #d2c0aa, #d7cbc6); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #a09691, #d2c0aa, #d7cbc6); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #a09691, #d2c0aa, #d7cbc6); /* Standard syntax */
+    height: 260px;
+    text-align: center;
+}
+
+
+/* Menu */
+
+.menu {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: normal;
+}
+
+.menu a {
+    display: block;
+    line-height: 50px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    padding: 0 20px 0 20px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "centurygothic", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #968e8e;
+    border: none;
+    background-color: white;
+}
+
+.menu a:hover {
+    color: #968e8e;
+    background-color: #ede4e5;
+}
+
+@media all and (min-width: 600px) {
+    nav li {
+        display: inline-block;
+        width: 50%;
+    }
+
+    #social1 {
+        float: left;
+        width: 49%;
+    }
+
+    #social2 {
+        float: left;
+        width: 49%;
+    }
+
+
+}
+@media all and (min-width: 850px) {
+    nav li {
+        width: calc(100% / 3);
+    }
+}
+@media all and (min-width: 1100px) {
+    nav li {
+        width: calc(100% / 6);
+    }
+}
+
+/* Page */
+
+#page {
+    margin: 0 auto;
+    padding: 0.5em 0 0 0;
+}
+
+/* Content */
+
+.post {
+    overflow: hidden;
+    margin-bottom: 0.5em;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: white;
+}
+
+.post .title {
+    padding: 25px 0 5px 0;
+    letter-spacing: -1px;
+    border-bottom: 4px solid #8abec0;
+    color: #8abec0;
+}
+
+.post p:first-child {
+    padding-top: 10px;
+}
+
+@media (min-width: 950px) {
+    #content {
+        float: right;
+        margin-left: 0.5em;
+        width: calc(100% / 3 * 2);
+    }
+
+    #sidebar {
+        float: left;
+        width: calc(100% / 3 - 0.5em);
+    }
+
+    #social1 {
+        float: left;
+        width: calc(100% / 3 - 0.5em);
+    }
+
+    #social2 {
+        float: left;
+        margin-left: 0.5em;
+        width: calc(100% / 3 - 0.5em);
+    }
+
+    #social3 {
+        float: left;
+        margin-left: 0.5em;
+        width: calc(100% / 3);
+    }
+}
+
+/* Sidebar */
+
+#sidebar section {
+    padding: 10px 20px 10px 20px;
+    background-color: #ede4e5;
+    margin-bottom: 0.5em;
+}
+
+#sidebar h3 {
+    padding: 10px 0 10px 0;
+    letter-spacing: -0.5px;
+    font-size: 1.4em;
+    color: #968e8e;
+    font-family: "PT Serif", serif;
+    font-weight: bold;
+}
+
+#sidebar p {
+    text-align: justify;
+}
+
+/* Social Bar */
+
+#socialbar {
+    margin: auto;
+}
+
+#socialbar section {
+    padding: 10px 20px 10px 20px;
+    background-color: #ede4e5;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+#socialbar h3 {
+    padding: 10px 0 10px 0;
+    letter-spacing: -0.5px;
+    font-size: 1.4em;
+    color: #968e8e;
+    font-family: "PT Serif", serif;
+    font-weight: bold;
+}
+
+#socialbar p {
+    text-align: justify;
+}
+
+
+/* Footer */
+
+#footer {
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+#copyright {
+    margin: 0.5em 0 0.5em 0;
+    padding: 10px 0 1px 0;
+    background: #746c69;
+    color: #ede4e5;
+    text-align: center;
+}
+
+/* Search Form */
+
+.form-element {
+    display: table-cell;
+    padding-bottom: 10px;
+}
+
+.textfield {
+    width: 100%;
+}
+
+.textfield > input {
+    width: 100%;
+}
